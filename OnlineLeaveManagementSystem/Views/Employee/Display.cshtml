@@ -1,0 +1,19 @@
+﻿@model IEnumerable< OnlineLeaveManagement.Entity.Employee>
+
+@{
+    ViewBag.Title = "Display";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>Display</h2>
+@Html.ActionLink("Create New Employee", "AddEmployee")<br />
+
+@if (TempData["Message"] != null)
+{
+    @Html.Label((string)TempData["Message"])
+}
+<h2>Employee</h2>
+@{
+    Html.RenderPartial("View");
+}
+

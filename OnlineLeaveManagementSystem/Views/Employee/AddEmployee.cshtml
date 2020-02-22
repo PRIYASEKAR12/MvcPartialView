@@ -1,0 +1,65 @@
+﻿@model OnlineLeaveManagement.Entity.Employee
+
+@{
+    ViewBag.Title = "AddEmployee";
+    Layout = "~/Views/Shared/MasterPage.cshtml";
+}
+
+<h2>AddEmployee</h2>
+@Html.ValidationSummary(true, "",new { @class="text-danger"})
+@using (Html.BeginForm("AddEmployee", "Employee", FormMethod.Post))
+{
+    <table cellpadding="10">
+        <tr>
+            <td>
+                @Html.LabelFor(Model=>Model.EmployeeName)
+            </td>
+            <td>
+                @Html.EditorFor(model => model.EmployeeName)
+                @Html.ValidationMessageFor(model=>model.EmployeeName)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(Model=>Model.EmployeeId)
+            </td>
+            <td>
+                @Html.TextBoxFor(Model => Model.EmployeeId)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(Model=>Model.EmployeePhoneNumber)
+            </td>
+            <td>
+                @Html.TextBoxFor(Model => Model.EmployeePhoneNumber)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(Model => Model.Age)
+            </td>
+            <td>
+                @Html.TextBoxFor(Model => Model.Age)
+                @Html.ValidationMessageFor(Model => Model.Age)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label("Gender")
+            </td>
+            <td>
+                @Html.RadioButtonFor(Model => Model.Gender, "Male")Male
+                @Html.RadioButtonFor(Model => Model.Gender, "Female") Female
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <input type="submit" />
+            </td>
+        </tr>
+    </table>
+}
+

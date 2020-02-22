@@ -1,0 +1,33 @@
+﻿@model IEnumerable < OnlineLeaveManagement.Entity.Employee>
+<table>
+    <tr>
+        <td>Employee Name</td>
+        <td>Employee Id</td>
+        <td>Employee PhoneNumber</td>
+        <td>Age</td>
+        <td>Gender</td>
+    </tr>
+    @foreach (OnlineLeaveManagement.Entity.Employee item in @Model)
+    {
+        <tr>
+            <td>
+                @item.EmployeeName
+            </td>
+            <td>
+                @item.EmployeeId
+            </td>
+            <td>
+                @item.EmployeePhoneNumber
+            </td>
+            <td>
+                @item.Age
+            </td>
+            <td>
+                @item.Gender
+            </td>
+            <td>
+               
+            </td>
+        </tr>
+    }
+</table>

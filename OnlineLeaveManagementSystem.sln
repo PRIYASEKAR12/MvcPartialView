@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineLeaveManagementSystem", "OnlineLeaveManagementSystem\OnlineLeaveManagementSystem.csproj", "{1A41C293-7F1F-48F7-8AB2-4035D27560B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineLeaveManagement.Entity", "OnlineLeaveManagement.Entity\OnlineLeaveManagement.Entity.csproj", "{FCF4FDC3-B5E8-441A-A9CC-C0427F6C79EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineLeaveManagement.DAL", "OnlineLeaveManagement.DAL\OnlineLeaveManagement.DAL.csproj", "{86A0F5BA-DC82-40E0-99A1-3A2B9C5A7EAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A41C293-7F1F-48F7-8AB2-4035D27560B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A41C293-7F1F-48F7-8AB2-4035D27560B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A41C293-7F1F-48F7-8AB2-4035D27560B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A41C293-7F1F-48F7-8AB2-4035D27560B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCF4FDC3-B5E8-441A-A9CC-C0427F6C79EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF4FDC3-B5E8-441A-A9CC-C0427F6C79EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF4FDC3-B5E8-441A-A9CC-C0427F6C79EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF4FDC3-B5E8-441A-A9CC-C0427F6C79EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86A0F5BA-DC82-40E0-99A1-3A2B9C5A7EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86A0F5BA-DC82-40E0-99A1-3A2B9C5A7EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86A0F5BA-DC82-40E0-99A1-3A2B9C5A7EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86A0F5BA-DC82-40E0-99A1-3A2B9C5A7EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
