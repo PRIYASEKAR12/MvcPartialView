@@ -8,13 +8,20 @@ using System.Web.Mvc;
 
 namespace OnlineLeaveManagementSystem.Controllers
 {
+   
     public class EmployeeController : Controller
     {
         // GET: Employee
         public ActionResult Index()
         {
             return View();
-        }       
+        }
+        [ErrorHandle()] 
+        public ViewResult ErrorHandling()
+        {
+            throw new Exception("There should be error. Wrong Message");
+        }
+            
         EmployeeRepository employeeRepository;
         public EmployeeController()
         {
